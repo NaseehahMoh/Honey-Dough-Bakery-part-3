@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Honey Dough Bakery</title>
+    <meta name="description" content="Browse cakes, pastries, breads and bakery services from Honey Dough Bakery.">
+    <meta name="keywords" content="bakery menu, cakes, pastries, breads, custom cakes, Pietermaritzburg">
+    <meta name="author" content="Honey Dough Bakery">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+        <h1>Honey Dough Bakery</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section><h2>Our Products &amp; Services</h2><p>Explore our selection of freshly baked products and services made for every occasion.</p></section>
+        <section>
+            <h2>Our Products</h2>
+            <div class="menu-tools">
+                <label for="menu-search">Search products:</label>
+                <input type="search" id="menu-search" placeholder="Type a product name..." aria-label="Search products">
+                <label for="menu-sort">Sort:</label>
+                <select id="menu-sort"><option value="default">Default order</option><option value="az">Name: A to Z</option><option value="za">Name: Z to A</option></select>
+            </div>
+            <p id="search-message" aria-live="polite"></p>
+            <div class="product-container" id="menu-products">
+                <div class="product-card menu-item" data-name="Cakes"><img src="Images/chocolate-celebration-cake.jpg" alt="Chocolate celebration cake"><h3>Cakes</h3><p>Delicious cakes for birthdays, weddings, celebrations and other special occasions.</p></div>
+                <div class="product-card menu-item" data-name="Pastries"><img src="Images/fresh-bakery-rolls.webp" alt="Fresh golden pastries"><h3>Pastries</h3><p>Freshly baked pastries that are perfect for breakfast, snacks or special events.</p></div>
+                <div class="product-card menu-item" data-name="Breads"><img src="Images/fresh-bakery-rolls.webp" alt="Freshly baked bread rolls"><h3>Breads</h3><p>Fresh and tasty breads made with quality ingredients.</p></div>
+                <div class="product-card menu-item" data-name="Fruit Tarts"><img src="Images/fresh-fruit-tarts.jpg" alt="Fruit tarts topped with berries"><h3>Fruit Tarts</h3><p>Sweet pastry treats topped with fruit and berries.</p></div>
+                <div class="product-card menu-item" data-name="Cookies"><img src="Images/chocolate-chip-cookies.jpg" alt="Chocolate chip cookies"><h3>Cookies</h3><p>Chocolate chip cookies for a simple sweet treat.</p></div>
+            </div>
+            <p id="no-results" class="form-message" hidden>No products match your search.</p>
+        </section>
+        <section><h2>Our Services</h2>
+            <div class="product-container">
+                <div class="product-card"><h3>Custom Orders</h3><p>Request customised cakes and baked goods for your special occasion.</p></div>
+                <div class="product-card"><h3>Catering</h3><p>Baked goods and treats for parties, celebrations and events.</p></div>
+                <div class="product-card"><h3>Special Occasions</h3><p>We create delicious treats for birthdays, weddings and other memorable moments.</p></div>
+            </div>
+        </section>
+        <section><h2>Ready to Order?</h2><p>Contact Honey Dough Bakery to place your order or ask about our products and services.</p><a class="button-link" href="order.html">Order Now</a></section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Honey Dough Bakery. All rights reserved.</p>
+        <p>Pietermaritzburg, KwaZulu-Natal | 012 345 6789</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

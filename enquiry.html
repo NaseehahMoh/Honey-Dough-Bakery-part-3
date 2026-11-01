@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | Honey Dough Bakery</title>
+    <meta name="description" content="Ask Honey Dough Bakery about products, services, availability, volunteering or sponsorship.">
+    <meta name="keywords" content="bakery enquiry, product availability, bakery services, sponsorship, volunteering">
+    <meta name="author" content="Honey Dough Bakery">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+        <h1>Honey Dough Bakery</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section><h2>Make an Enquiry</h2><p>Use this form to ask about our products, services or other opportunities. We will prepare your enquiry for email.</p></section>
+        <section>
+            <form id="enquiry-form" class="bakery-form" novalidate>
+                <label for="enquiry-name">Full Name:</label><input type="text" id="enquiry-name" name="name" minlength="2" required>
+                <label for="enquiry-email">Email Address:</label><input type="email" id="enquiry-email" name="email" required>
+                <label for="enquiry-phone">Phone Number:</label><input type="tel" id="enquiry-phone" name="phone" pattern="[0-9+()\s-]{7,20}" required>
+                <label for="enquiry-type">What is your enquiry about?</label>
+                <select id="enquiry-type" name="enquiry-type" required><option value="">-- Please Select --</option><option value="Products">Products</option><option value="Services">Services</option><option value="Product availability">Product availability</option><option value="Volunteering">Volunteering</option><option value="Sponsorship">Sponsorship</option><option value="Other">Other</option></select>
+                <label for="enquiry-details">Your Enquiry:</label><textarea id="enquiry-details" name="details" rows="6" minlength="10" placeholder="Please provide a few details about your enquiry..." required></textarea>
+                <p id="enquiry-feedback" class="form-message" role="status" aria-live="polite"></p>
+                <button type="submit">Prepare Enquiry Email</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Honey Dough Bakery. All rights reserved.</p>
+        <p>Pietermaritzburg, KwaZulu-Natal | 012 345 6789</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Honey Dough Bakery - original colour palette retained */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background-color: #fff8f0; color: #4a3428; line-height: 1.6; }
+header { background-color: #f3d5b5; padding: 20px; text-align: center; }
+header h1 { font-size: 32px; margin-bottom: 10px; }
+nav a { text-decoration: none; color: #4a3428; margin: 0 12px; font-weight: bold; }
+nav a:hover, nav a:focus { text-decoration: underline; }
+main { width: 90%; max-width: 1100px; margin: auto; }
+section { padding: 50px 20px; text-align: center; }
+section h2 { font-size: 28px; margin-bottom: 15px; }
+section p { max-width: 700px; margin: 0 auto 20px; }
+button, .button-link { display: inline-block; background-color: #c97b63; color: white; border: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; cursor: pointer; text-decoration: none; font-family: Arial, sans-serif; }
+button:hover, button:focus, .button-link:hover, .button-link:focus { background-color: #a85d49; }
+.product-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
+.product-card { background-color: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.product-card h3 { margin: 12px 0 10px; }
+.product-card img { width: 100%; height: 190px; object-fit: cover; border-radius: 6px; }
+footer { background-color: #f3d5b5; text-align: center; padding: 20px; margin-top: 30px; }
+footer p { margin: 4px 0; }
+.bakery-form { max-width: 620px; margin: 0 auto; padding: 25px; background-color: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: left; }
+.bakery-form label { display: block; margin: 12px 0 5px; font-weight: bold; }
+.bakery-form input, .bakery-form select, .bakery-form textarea, .menu-tools input, .menu-tools select { width: 100%; padding: 10px; border: 1px solid #c9ad98; border-radius: 5px; font: inherit; color: #4a3428; background-color: #fff8f0; }
+.bakery-form input:focus, .bakery-form select:focus, .bakery-form textarea:focus, .menu-tools input:focus, .menu-tools select:focus { outline: 2px solid #c97b63; outline-offset: 1px; }
+.bakery-form button { margin-top: 10px; }
+.form-message { margin: 12px 0; color: #4a3428; font-weight: bold; }
+.menu-tools { max-width: 600px; margin: 20px auto; display: grid; grid-template-columns: 1fr 2fr; gap: 10px; align-items: center; text-align: left; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; max-width: 850px; margin: 25px auto 0; }
+.gallery-image { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: pointer; }
+.gallery-image:hover { opacity: 0.85; }
+#bakery-map { width: 100%; height: 350px; max-width: 850px; margin: 20px auto; border: 2px solid #f3d5b5; border-radius: 8px; z-index: 1; }
+.lightbox { display: none; position: fixed; z-index: 1000; inset: 0; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; padding: 20px; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 90%; max-height: 85vh; border: 5px solid #fff8f0; border-radius: 6px; }
+.lightbox-close { position: absolute; top: 15px; right: 25px; color: white; background: transparent; font-size: 32px; padding: 5px 12px; }
+@media (max-width: 768px) { .product-container { grid-template-columns: repeat(2, 1fr); } nav a { display: inline-block; margin: 5px; } .gallery { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { header h1 { font-size: 25px; } .product-container, .gallery { grid-template-columns: 1fr; } section { padding: 30px 10px; } .menu-tools { grid-template-columns: 1fr; } .bakery-form { padding: 18px; } }

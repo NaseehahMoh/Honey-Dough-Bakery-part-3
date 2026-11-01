@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Honey Dough Bakery</title>
+    <meta name="description" content="Contact Honey Dough Bakery in Pietermaritzburg by phone or email, or send a message.">
+    <meta name="keywords" content="contact Honey Dough Bakery, bakery contact details, Pietermaritzburg bakery">
+    <meta name="author" content="Honey Dough Bakery">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+        <h1>Honey Dough Bakery</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section><h2>Contact Us</h2><p>We would love to hear from you! Contact Honey Dough Bakery for enquiries, orders or more information.</p></section>
+        <section><h2>Our Contact Details</h2>
+            <p><strong>Phone:</strong> 012 345 6789</p>
+            <p><strong>Email:</strong> <a href="mailto:info@honeydoughbakery.co.za">info@honeydoughbakery.co.za</a></p>
+            <p><strong>Address:</strong> Pietermaritzburg, KwaZulu-Natal</p>
+            <p><strong>Business Hours:</strong> Monday - Saturday, 08:00 - 17:00</p>
+        </section>
+        <section><h2>Send Us a Message</h2>
+            <form id="contact-form" class="bakery-form" novalidate>
+                <label for="contact-name">Full Name:</label><input type="text" id="contact-name" name="name" minlength="2" required>
+                <label for="contact-email">Email Address:</label><input type="email" id="contact-email" name="email" required>
+                <label for="message-type">Type of Message:</label>
+                <select id="message-type" name="message-type" required><option value="">-- Please Select --</option><option value="General question">General question</option><option value="Feedback">Feedback</option><option value="Order support">Order support</option><option value="Other">Other</option></select>
+                <label for="message">Message:</label><textarea id="message" name="message" rows="5" minlength="5" required></textarea>
+                <p id="contact-feedback" class="form-message" role="status" aria-live="polite"></p>
+                <button type="submit">Prepare Message Email</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Honey Dough Bakery. All rights reserved.</p>
+        <p>Pietermaritzburg, KwaZulu-Natal | 012 345 6789</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
